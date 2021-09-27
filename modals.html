@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Модалки</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.min.css" />
+	</head>
+	<body>
+<!-- header -->
+<header class="header">
+	<div class="container">
+		<div class="header__row">
+			<a href="#" class="header__logo">
+				<svg><use href="./img/sprite.svg#logo"></use></svg>
+			</a>
+			<ul class="header-menu">
+				<li class="header-menu__item">
+					<a href="#" class="header-menu__link">Акції</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="#" class="header-menu__link">Подарунки</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="#" class="header-menu__link">Переваги</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="#" class="header-menu__link">Відгуки</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="#" class="header-menu__link">Як замовити</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="#" class="header-menu__link">Контакти</a>
+				</li>
+			</ul>
+			<div class="social">
+				<a href="#" class="social__item">
+					<svg><use href="./img/sprite.svg#inst"></use></svg>
+				</a>
+			</div>
+
+			<div class="header-mobile__btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="header-mobile__wrapper"></div> -->
+</header>
+
+<a href="#product-card" data-fancybox class="btn-primary btn-size-1 btn-green">
+	модалка 1
+</a>
+<a href="#order" data-fancybox class="btn-primary btn-size-1 btn-green">
+	модалка 2
+</a>
+<a href="#request" data-fancybox class="btn-primary btn-size-1 btn-green">
+	модалка 3
+</a>
+
+<div class="modal modal_big" id="product-card">
+	<div class="modal__wrapper">
+		<div class="product-card__img">
+			<div class="owl-carousel">
+				<img src="./img/product-card_1.jpg" alt="img" />
+				<img src="./img/product-card_2.jpg" alt="img" />
+				<img src="./img/product-card_3.jpg" alt="img" />
+				<img src="./img/product-card_4.jpg" alt="img" />
+			</div>
+			<div class="stickers">
+				<div class="stickers__item">New</div>
+			</div>
+		</div>
+		<div class="modal-product__description">
+			<div class="modal-product__title">Audi - size “L”</div>
+			<div class="modal-product-price price">
+				<div class="price__caption">ЦІНА:</div>
+				<div class="price__wrapper">
+					<div class="price__old">1 350 ₴</div>
+					<div class="price__current">1 250 ₴</div>
+				</div>
+			</div>
+
+			<ul class="modal-product__list">
+				<li class="modal-product__list-item">Матеріал: дерево.</li>
+				<li class="modal-product__list-item">Розміри: 48*50*20.</li>
+				<li class="modal-product__list-item">У комплекті: 4 рюмки.</li>
+				<li class="modal-product__list-item">
+					У середині є місце для пляшки напою.
+				</li>
+				<li class="modal-product__list-item">Пляшка алкоголю на вибір.</li>
+			</ul>
+			<div class="modal-product__notice">
+				Напишіть нам свої побажання і ми підберемо мінібар для вас, і не тільки
+				мінібар, а ще й пляшку алкогольного напою.
+			</div>
+			<div class="modal-product__btns">
+				<a href="#" class="btn-primary btn-brown btn-size-5">Замовити зараз</a>
+				<a href="#" class="btn-primary btn-size-2 btn-border">
+					Замовити консультацію
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal modal_small" id="order">
+	<div class="modal__title">Audi - size “L”</div>
+	<div class="modal__price">
+		<div class="modal__price-caption">ЦІНА:</div>
+		<div class="modal__price-wrapper">
+			<div class="modal__price-old">1 350 ₴</div>
+			<div class="modal__price-current">1 250 ₴</div>
+		</div>
+	</div>
+	<form action="" class="modal-form">
+		<div class="input">
+			<div class="custom-select">
+				<div class="custom-select__caption">Колір</div>
+				<select>
+					<option value="0">Select car:</option>
+					<option value="1">Audi</option>
+					<option value="2">BMW</option>
+					<option value="3">Citroen</option>
+					<option value="4">Ford</option>
+					<option value="5">Honda</option>
+					<option value="6">Jaguar</option>
+					<option value="7">Land Rover</option>
+					<option value="8">Mercedes</option>
+					<option value="9">Mini</option>
+					<option value="10">Nissan</option>
+					<option value="11">Toyota</option>
+					<option value="12">Volvo</option>
+				</select>
+			</div>
+		</div>
+		<div class="input">
+			<div class="input__caption">Номерний знак</div>
+			<input type="text" placeholder="Введіть марку" />
+		</div>
+		<div class="modal-form__checkbox-caption">Потрібно, лого чи емблема:</div>
+		<label class="custom-checkbox">
+			<input type="checkbox" />
+			<span class="checkmark"></span>
+			Так
+		</label>
+
+		<div class="input">
+			<div class="input__caption">Коментар</div>
+			<textarea name="" id="" cols="30" rows="2" placeholder="Не обов’язково">
+			</textarea>
+		</div>
+		<div class="modal-form__present">
+			<img src="./img/bottle.png" alt="img" />
+			<div class="modal-form__present-text">
+				Пляшка <b>ЗУБРОВКИ</b> у подарунок!
+			</div>
+		</div>
+		<button type="submit" class="btn-primary btn-brown btn-no-size">
+			Замовити
+		</button>
+	</form>
+</div>
+
+<div class="modal modal_middle" id="request">
+	<div class="section-title">Заповніть форму</div>
+	<div class="subtitle">
+		Щоб дізнатися докладніше і наш менеджер св’яжеться з Вами впродовж 15 хв
+	</div>
+
+	<form action="" class="modal-form">
+		<div class="input">
+			<div class="input__caption">Номерний знак</div>
+			<input type="text" placeholder="Введіть марку" />
+		</div>
+		<div class="input">
+			<div class="input__caption">Номерний знак</div>
+			<input type="text" placeholder="Введіть марку" />
+		</div>
+		<div class="input">
+			<div class="input__caption">Коментар</div>
+			<textarea name="" cols="30" rows="2" placeholder="Не обов’язково">
+			</textarea>
+		</div>
+		<button type="submit" class="btn-primary btn-brown btn-no-size">
+			Замовити
+		</button>
+	</form>
+</div>
+
+<!-- footer -->
+<footer class="footer lazy" data-bg="./img/footer-bg.jpg">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<a href="#" class="footer__logo">
+					<svg>
+						<use href="./img/sprite.svg#logo-white"></use>
+					</svg>
+				</a>
+				<div class="footer__dev">
+					Сайт розроблений та підтримується веб-студією ALICOM
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="footer-contacts">
+					<div class="footer-contacts__icon">
+						<svg><use href="./img/sprite.svg#phone"></use></svg>
+					</div>
+					<a href="" class="footer-contacts__text">+38 (098) 89 89 589</a>
+				</div>
+				<div class="footer-contacts">
+					<div class="footer-contacts__icon">
+						<svg><use href="./img/sprite.svg#pin"></use></svg>
+					</div>
+					<div class="footer-contacts__text">
+						м. Львів, вул. Під Голоском 15-б
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="footer-contacts">
+					<div class="footer-contacts__icon">
+						<svg><use href="./img/sprite.svg#mail"></use></svg>
+					</div>
+					<a href="#" class="footer-contacts__text"> suveniry_ua@gmail.com </a>
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="social">
+					<a href="#" class="social__item">
+						<svg><use href="./img/sprite.svg#viber"></use></svg>
+					</a>
+					<a href="#" class="social__item">
+						<svg><use href="./img/sprite.svg#inst"></use></svg>
+					</a>
+					<a href="#" class="social__item">
+						<svg><use href="./img/sprite.svg#telegram"></use></svg>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-12">
+				<div class="footer__copyright">Політика конфіденційності</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="./js/app.min.js"></script>
+</body>
+</html>
+
